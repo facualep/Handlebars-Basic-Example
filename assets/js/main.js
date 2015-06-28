@@ -23,7 +23,7 @@ var data = {
                         '{/names}}</ul>' +
                     '</div>';
     var result = Mustache.render(template, data);
-    $(document.body).append(result);
+    $('.main').append(result);
 
 })(window.jQuery);
 
@@ -36,10 +36,15 @@ var data = {
         var template = $('#myTemplate').html();
         var compiledTemplate = Handlebars.compile(template);
         var result = compiledTemplate(data);
-        $(document.body).append(result);
+        $('.main').append(result);
     }
 
     $('#tester').on('click', function(e) {
+        e.preventDefault();
+        if ($("input[name='newTitle']").val() !== '') {
+            data.titlehandlebars = $("input[name='newTitle']").val();
+            $("input[name='newTitle']").val('');
+        }
         handlebarsRender();
     });
 

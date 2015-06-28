@@ -1,11 +1,123 @@
-body {
-    background: #333;
+@font-face {
+    font-family: 'customFont'; /*a name to be used later*/
+    src: url('../fonts/PenelopeAnne.ttf') format("truetype"); /*URL to font*/
 }
 
+body {
+    background: #333;
+    font-family: 'customFont';
+    margin: 0;
+}
+
+header,
+footer {
+    display: inline-block;
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    line-height: 80px;
+    font-weight: 300;
+
+}
+
+header {
+    border-bottom: 1px solid #666;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 40px;
+}
+
+header a {
+    text-decoration: none;
+    color: orange;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+header a:hover {
+    color: rgb(176, 114, 0);
+    transition: color 0.1s;
+}
+
+footer {
+    border-top: 1px solid #666;
+    text-align: right;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Arial';
+    padding-right: 15px;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: orange;
+    transition: color 0.1s;
+}
+
+
+.main a {
+    font-family: 'Arial';
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    width: 250px;
+    text-align: center;
+    padding: 10px 25px;
+    font-size: 25px;
+    border-radius: 8px;
+    margin: 0 auto 15px;
+    color: white;
+    pointer: cursor;
+    background-color: orange;
+    border: 1px solid orange;
+    transition: border 0.2s;
+}
+
+.main a:hover {
+    border: 1px solid white;
+    transition: border 0.2s;
+}
+
+.main a:focus,
+.main input:focus {
+    outline: 0;
+}
+
+.main a:target {
+    background-color: rgb(242, 157, 0);
+}
+
+.main input {
+    width: 250px;
+    display: block;
+    margin: auto;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+
+
 .container {
+    box-shadow: 0 0 10px black;
+    border-radius: 3px;
+    font-family: 'Arial';
+    margin: 15px 2.5%;
     padding: 15px;
     background-color: #eee;
     color: #666;
-    width: 20%;
+    width: 17%;
     display: inline-block;
+    transition: box-shadow 0.2s;
+}
+
+.container:hover {
+    box-shadow: 0 0 15px black;
+    transition: box-shadow 0.2s;
 }
