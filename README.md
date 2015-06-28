@@ -13,8 +13,10 @@ var data = {
 
 You could use it like this
 
-# {{ data.title }}
-## {{ data.subtitle }}
+```
+<h1> {{ data.title }} </h1>
+<h2> {{ data.subtitle }} </h2>
+```
 
 And this would be rendered as it follows
 
