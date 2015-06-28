@@ -3,12 +3,9 @@ var data = {
     "titlemustache": "MUSTACHE",
     "titlehandlebars": "HANDLEBARS",
     "names": [
-        {"name": "Tarzan"},
-        {"name": "Tarzan"},
-        {"name": "Tarzan"},
-        {"name": "Tarzan"},
-        {"name": "Tarzan"},
-        {"name": "Jane"}
+        {"name": "First Item"},
+        {"name": "Second Item"},
+        {"name": "Third Item"}
     ]
 };
 
